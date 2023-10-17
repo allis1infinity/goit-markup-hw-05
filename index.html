@@ -401,7 +401,7 @@
           </p>
         </div>
          <div class="footer-media-box">
-            <p class="footer-media-text">Social media</p>
+            <p class="footer-media-text right-text">Social media</p>
             <ul class="footer-net-list">
               <li class="soc-net-item">
                 <a class="soc-net-link" href="https://www.instagram.com" target="_blank">
@@ -434,21 +434,22 @@
             </ul>
          </div>
         
+         <div class="footer-right-part">
+          <p class="footer-form-text right-text">Subscribe</p>
           <form class="footer-form">
-            <div class="footer-email">
-              <label class="footer-label" for="footer-label">Subscribe</label>
+            <label class="footer-lable" for="footer-email"></label>                         
               <input 
-               type="email"
-               id="footer-label"
-               class="footer-input"
-               placeholder="E-mail"/>  
-            </div>       
-              <button type="submit" class="footer-button">Subscribe
-                <svg class="footer-button-icon" width="24" height="20">
-                  <use href="./images/icons.svg#icon-icon-send"></use>
-                </svg>
-              </button>
-          </form>      
+                type="email"
+                id="footer-email"
+                class="footer-input"
+                placeholder="E-mail"/>          
+            <button type="submit" class="footer-button">Subscribe
+              <svg class="footer-button-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+            </form>
+         </div>      
       </div>
     </footer>
       
@@ -500,23 +501,25 @@
                   required/>
                   <svg class="modal-icon" width="18" height="24">
                     <use href="./images/icons.svg#icon-email"></use>
-                  </svg>     
+                  </svg> 
               </div>       
          </div>
           <div class="modal-row">
-            <label class="modal-lable" for="user-comments">Comment</label>              
-              <textarea name="user-comments"
+            <label class="modal-lable" for="user-comment">Comment</label>              
+            <textarea name="user-comment"
                class="modal-input modal-text"
-               id="user-comments" 
+               id="user-comment" 
                placeholder="Text input"></textarea>     
           </div>
-          <div class="modal-row">          
-            <input type="checkbox" name="agreement" class="input-check visually-hidden" id="agreement"/>
-            <label class="text-check" for="agreement" >
-            <span><svg class="modal-check-icon" width="10" height="8"> 
-              <use href="/images/icons.svg#icon-agreevector"></use>
-            </svg></span>
-            I accept the terms and conditions of the <a href="">Privacy Policy</a></label>
+          <div class="modal-row-check">          
+            <input type="checkbox" name="user-privacy" class="input-check visually-hidden" id="user-privacy" value="true"/>
+            <label class="text-check" for="user-privacy">
+              <span class="check-span">
+                <svg class="modal-check-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-agreevector"></use>
+                </svg>
+              </span>
+            I accept the terms and conditions of the <a class="" href="privacy-policy">Privacy Policy</a></label>
           </div>
          <button type="submit" class="form-button">Send</button>
         </form>
