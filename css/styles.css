@@ -559,15 +559,15 @@ fill: #f4f4fd;
 .footer-input {   
     width: 264px;
     height: 40px;
-    border-radius: 4px;
-    border: 1px solid var(--WHITE, #FFF);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    border: 1px solid #FFF;
     background-color: transparent;
     font-size: 12px;
-    font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.04em;
     padding-left: 16px;
+    filter: drop-shadow (0px 4px 4px 0px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    color: #FFF;
 }   
 
 .footer-input::placeholder {
@@ -576,34 +576,30 @@ fill: #f4f4fd;
 
 
 .footer-button {
-    color: #FFF;
-    font-family: Roboto;
+    min-width: 165px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    background-color: #4D5AE5;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    border: none;
+    color: #FFF;
     cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-    width: 165px;
-    height: 40px;     
-    padding: 8px 24px;
+    background-color: #4D5AE5;
+    border: none;
+    border-radius: 4px;          
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   
-}
+   }
+
  .footer-button:focus {
     background-color: #404BBF;
  }
 
  .footer-button-icon {
-    width: 24px;
-    height: 24px;
+   margin-left: 16px;
  }
 
 
@@ -691,7 +687,7 @@ fill: #f4f4fd;
 }
 
 .modal-row {
-  margin-bottom: 16px;  
+  margin-bottom: 8px;  
 }
 
 .modal-lable { 
@@ -710,11 +706,11 @@ fill: #f4f4fd;
 }
 
 .modal-icon {
-
     position: absolute;
     left: 16px;
     top: 50%;
     transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
