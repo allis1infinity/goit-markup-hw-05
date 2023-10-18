@@ -555,7 +555,10 @@ fill: #f4f4fd;
     display: flex;  
     gap: 24px;  
 }
-     
+.footer-label {
+    display: flex;
+}
+
 .footer-input {   
     width: 264px;
     height: 40px;
@@ -565,7 +568,7 @@ fill: #f4f4fd;
     line-height: 1.5;
     letter-spacing: 0.04em;
     padding-left: 16px;
-    filter: drop-shadow (0px 4px 4px 0px rgba(0, 0, 0, 0.15));
+    filter: drop-shadow (0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     color: #FFF;
 }   
